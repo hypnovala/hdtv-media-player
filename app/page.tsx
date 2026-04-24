@@ -6,9 +6,9 @@ export default function Home() {
       <div className="mx-auto max-w-7xl">
         <header className="mb-8 space-y-3 text-center md:mb-10">
           <p className="text-xs uppercase tracking-[0.4em] text-gold/80">Curated Showcase</p>
-          <h1 className="text-3xl font-semibold tracking-tight md:text-5xl">Vertical Media Theater</h1>
+          <h1 className="text-3xl font-semibold tracking-tight md:text-5xl">HDTV Hidden Exclusives</h1>
           <p className="mx-auto max-w-2xl text-sm text-slate-300 md:text-base">
-            Pick any clip to play it in the featured area. Designed for mobile-first 9:16 previews with a cinematic finish.
+            Step inside a curated stream of cinematic hypnosis experiences designed to pull your focus deeper and keep your attention exactly where it belongs…
           </p>
         </header>
         <VideoGallery />
