@@ -31,7 +31,6 @@ export default function FeaturedVideoPlayer({ video }: FeaturedVideoPlayerProps)
             >
               {video.locked ? "Locked" : "Unlocked"}
             </span>
-            <span className="rounded-full border border-white/20 px-2.5 py-1 text-xs text-slate-300">{video.duration}</span>
           </div>
           <h2 className="text-2xl font-semibold text-white md:text-3xl">{video.title}</h2>
           <p className="max-w-prose text-sm leading-relaxed text-slate-300 md:text-base">{video.description}</p>

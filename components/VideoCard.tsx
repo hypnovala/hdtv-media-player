@@ -41,7 +41,6 @@ export default function VideoCard({ video, isActive, onSelect }: VideoCardProps)
       <div className="space-y-1.5 bg-slate/60 p-3">
         <div className="flex items-center justify-between gap-3">
           <h3 className="line-clamp-1 text-sm font-semibold text-white">{video.title}</h3>
-          <span className="shrink-0 text-xs text-slate-300">{video.duration}</span>
         </div>
         <p className="line-clamp-2 text-xs leading-relaxed text-slate-300">{video.description}</p>
       </div>
