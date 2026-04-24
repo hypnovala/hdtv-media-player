@@ -1,3 +1,4 @@
+import Image from "next/image";
 import VideoGallery from "@/components/VideoGallery";
 
 export default function Home() {
@@ -10,6 +11,15 @@ export default function Home() {
           <p className="mx-auto max-w-2xl text-sm text-slate-300 md:text-base">
             Step inside a curated stream of cinematic hypnosis experiences designed to pull your focus deeper and keep your attention exactly where it belongs…
           </p>
+          <div className="relative mx-auto mt-4 w-full overflow-hidden rounded-xl border border-white/10" style={{ aspectRatio: "2560 / 423" }}>
+            <Image
+              src="/banner_hdtv.png"
+              alt="HDTV Hidden Exclusives Banner"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </header>
         <VideoGallery />
       </div>
