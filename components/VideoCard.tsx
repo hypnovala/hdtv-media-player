@@ -5,11 +5,9 @@ import type { VideoItem } from "@/data/videos";
 
 type VideoCardProps = {
   video: VideoItem;
-  isActive: boolean;
-  onSelect: (video: VideoItem) => void;
 };
 
-export default function VideoCard({ video, isActive, onSelect }: VideoCardProps) {
+export default function VideoCard({ video }: VideoCardProps) {
   const previewRef = useRef<HTMLVideoElement | null>(null);
 
   const handleMouseEnter = () => {
@@ -34,16 +32,10 @@ export default function VideoCard({ video, isActive, onSelect }: VideoCardProps)
   };
 
   return (
-    <button
-      type="button"
-      onClick={() => onSelect(video)}
+    <article
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`group relative overflow-hidden rounded-2xl border text-left shadow-cinematic transition-all duration-300 ${
-        isActive
-          ? "border-glow/80 ring-2 ring-glow/30"
-          : "border-white/10 hover:-translate-y-0.5 hover:border-glow/60"
-      }`}
+      className="group relative overflow-hidden rounded-2xl border border-white/10 text-left shadow-cinematic transition-all duration-300 hover:-translate-y-0.5 hover:border-glow/60"
     >
       <div className="relative w-full aspect-[9/16] overflow-hidden bg-black">
         <video
@@ -67,6 +59,6 @@ export default function VideoCard({ video, isActive, onSelect }: VideoCardProps)
         <h3 className="line-clamp-1 text-sm font-semibold text-white">{video.title}</h3>
         <p className="line-clamp-2 text-xs leading-relaxed text-slate-300">{video.description}</p>
       </div>
-    </button>
+    </article>
   );
 }
