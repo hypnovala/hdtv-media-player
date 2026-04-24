@@ -11,8 +11,8 @@ export const videos: VideoItem[] = [
   {
     title: "Neon Skyline Drift",
     description: "A vertical city glide through midnight lights.",
-    videoSrc: "/videos/neon-skyline.mp4",
-    posterSrc: "/thumbnails/neon-skyline.jpg",
+    videoSrc: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    posterSrc: "https://grok.com/imagine/post/800eacd9-fe49-43c9-a1fa-ca8b15093683",
     duration: "00:42",
     locked: false
   },
