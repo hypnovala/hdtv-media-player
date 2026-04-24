@@ -17,7 +17,7 @@ export default function VideoGallery() {
     <section className="space-y-6 md:space-y-8">
       <FeaturedVideoPlayer video={activeVideo} />
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
         {orderedVideos.map((video) => (
           <VideoCard
             key={video.videoSrc}
