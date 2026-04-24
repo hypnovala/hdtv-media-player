@@ -3,41 +3,78 @@ export type VideoItem = {
   description: string;
   videoSrc: string;
   posterSrc: string;
-  duration: string;
   locked: boolean;
 };
 
 export const videos: VideoItem[] = [
   {
-    title: "Neon Skyline Drift",
-    description: "A vertical city glide through midnight lights.",
-    videoSrc: "/videos/neon-skyline.mp4",
-    posterSrc: "/thumbnails/neon-skyline.jpg",
-    duration: "00:42",
+    title: "Video 01",
+    description: "Local library clip from /public/videos/video_01.mp4.",
+    videoSrc: "/videos/video_01.mp4",
+    posterSrc: "/thumbnails/video_01.jpg",
     locked: false
   },
   {
-    title: "Coastal Dawn",
-    description: "Soft sunrise waves with cinematic color grading.",
-    videoSrc: "/videos/coastal-dawn.mp4",
-    posterSrc: "/thumbnails/coastal-dawn.jpg",
-    duration: "01:10",
+    title: "Video 02",
+    description: "Local library clip from /public/videos/video_02.mp4.",
+    videoSrc: "/videos/video_02.mp4",
+    posterSrc: "/thumbnails/video_02.jpg",
     locked: false
   },
   {
-    title: "Vault Sequence",
-    description: "High contrast abstract sequence from the private archive.",
-    videoSrc: "/videos/vault-sequence.mp4",
-    posterSrc: "/thumbnails/vault-sequence.jpg",
-    duration: "00:58",
-    locked: true
+    title: "Video 03",
+    description: "Local library clip from /public/videos/video_03.mp4.",
+    videoSrc: "/videos/video_03.mp4",
+    posterSrc: "/thumbnails/video_03.jpg",
+    locked: false
   },
   {
-    title: "Golden Corridor",
-    description: "Luxury interiors in motion with dramatic shadow play.",
-    videoSrc: "/videos/golden-corridor.mp4",
-    posterSrc: "/thumbnails/golden-corridor.jpg",
-    duration: "01:24",
+    title: "Video 04",
+    description: "Local library clip from /public/videos/video_04.mp4.",
+    videoSrc: "/videos/video_04.mp4",
+    posterSrc: "/thumbnails/video_04.jpg",
+    locked: false
+  },
+  {
+    title: "Video 05",
+    description: "Local library clip from /public/videos/video_05.mp4.",
+    videoSrc: "/videos/video_05.mp4",
+    posterSrc: "/thumbnails/video_05.jpg",
+    locked: false
+  },
+  {
+    title: "Video 06",
+    description: "Local library clip from /public/videos/video_06.mp4.",
+    videoSrc: "/videos/video_06.mp4",
+    posterSrc: "/thumbnails/video_06.jpg",
+    locked: false
+  },
+  {
+    title: "Video 07",
+    description: "Local library clip from /public/videos/video_07.mp4.",
+    videoSrc: "/videos/video_07.mp4",
+    posterSrc: "/thumbnails/video_07.jpg",
+    locked: false
+  },
+  {
+    title: "Video 08",
+    description: "Local library clip from /public/videos/video_08.mp4.",
+    videoSrc: "/videos/video_08.mp4",
+    posterSrc: "/thumbnails/video_08.jpg",
+    locked: false
+  },
+  {
+    title: "Video 09",
+    description: "Local library clip from /public/videos/video_09.mp4.",
+    videoSrc: "/videos/video_09.mp4",
+    posterSrc: "/thumbnails/video_09.jpg",
+    locked: false
+  },
+  {
+    title: "Video 10",
+    description: "Local library clip from /public/videos/video_10.mp4.",
+    videoSrc: "/videos/video_10.mp4",
+    posterSrc: "/thumbnails/video_10.jpg",
     locked: false
   }
 ];
