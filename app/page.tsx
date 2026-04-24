@@ -8,7 +8,7 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.4em] text-gold/80">Curated Showcase</p>
           <h1 className="text-3xl font-semibold tracking-tight md:text-5xl">Vertical Media Theater</h1>
           <p className="mx-auto max-w-2xl text-sm text-slate-300 md:text-base">
-            Pick any clip to play it in the featured area. Designed for mobile-first 9:16 previews with a cinematic finish.
+            Auto-paired library using video_01.mp4 ↔ preview_01.png naming for a smooth, cinematic mobile-first feed.
           </p>
         </header>
         <VideoGallery />
