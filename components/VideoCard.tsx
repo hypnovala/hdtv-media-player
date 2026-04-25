@@ -5,9 +5,10 @@ import type { VideoItem } from "@/data/videos";
 
 type VideoCardProps = {
   video: VideoItem;
+  onPlay: () => void;
 };
 
-export default function VideoCard({ video }: VideoCardProps) {
+export default function VideoCard({ video, onPlay }: VideoCardProps) {
   const previewRef = useRef<HTMLVideoElement | null>(null);
 
   const handleMouseEnter = () => {
@@ -35,7 +36,8 @@ export default function VideoCard({ video }: VideoCardProps) {
     <article
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="group relative overflow-hidden rounded-2xl border border-white/10 text-left shadow-cinematic transition-all duration-300 hover:-translate-y-0.5 hover:border-glow/60"
+      onClick={onPlay}
+      className="group relative cursor-pointer overflow-hidden rounded-2xl border border-white/10 text-left shadow-cinematic transition-all duration-300 hover:-translate-y-0.5 hover:border-glow/60"
     >
       <div className="relative w-full aspect-[9/16] overflow-hidden bg-black">
         <video
@@ -50,7 +52,7 @@ export default function VideoCard({ video }: VideoCardProps) {
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <span className="rounded-full border border-white/30 bg-black/45 px-3 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white backdrop-blur-sm transition group-hover:scale-105">
+          <span className="rounded-full border border-white/30 bg-black/45 px-3 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white backdrop-blur-sm transition group-hover:scale-110">
             ▶ Play
           </span>
         </div>

@@ -4,6 +4,7 @@ export type VideoItem = {
   description: string;
   videoSrc: string;
   posterSrc: string;
+  locked?: boolean;
 };
 
 const TOTAL_VIDEOS = 10;
